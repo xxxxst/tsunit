@@ -1,0 +1,19 @@
+{
+	"name": "tsunit",
+	"version": "0.0.1",
+	"description": "typescript util test",
+	"author": "xxxxst",
+	"main": "lib/index.js",
+	"typings": "types/index.d.ts",
+	"files": [
+		"src",
+		"lib",
+		"types"
+	],
+	"dependencies": {
+		"tslib": "^1.9.3"
+	},
+	"devDependencies": {
+		"typescript": "3.2.2"
+	}
+}
