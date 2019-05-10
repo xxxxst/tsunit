@@ -16,7 +16,7 @@
 <h2 align="center">安装</h2>
 
 ```bash
-npm install tsunit
+npm install @xxxxst/tsunit
 ```
 
 <h2 align="center">配置</h2>

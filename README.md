@@ -16,7 +16,7 @@ a typescript unit test like csharp
 <h2 align="center">Install</h2>
 
 ```bash
-npm install tsunit
+npm install @xxxxst/tsunit
 ```
 
 <h2 align="center">Config</h2>
