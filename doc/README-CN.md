@@ -179,7 +179,7 @@ setTimeout(()=>{
 assert使用
 
 方法|近似表达式|示例
-:-|:-|:-|:-
+:-|:-|:-
 equal   | a==b(遍历对象) |Assert.equal(1,1) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=> 成功<br/>Assert.equal(true,true) => 成功<br/>Assert.equal(1,'1') &nbsp;&nbsp;&nbsp;&nbsp;=> 成功<br/>Assert.equal({},{}) &nbsp;&nbsp;&nbsp;&nbsp;=> 成功<br/>Assert.equal([1],[1]) &nbsp;&nbsp;=> 成功
 notEqual       |a!=b(遍历对象)
 strongEqual    | typeof(a)==typeof(b) && equal(a,b) |Assert.strongEqual(1,'1') => 失败

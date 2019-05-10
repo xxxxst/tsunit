@@ -104,35 +104,41 @@ open console to view test info
 ## decorators
 
 <p style="color:#25b4c0;">@TestClass(option?:{autoRun?:boolean}, ...args)</p>
+
 - class decorator
 - mark test class
 - `autoRun` auto run test, default is `true`
 - `args` test class constructor arguments
 
 <p style="color:#25b4c0;">@Test(...args)</p>
+
 - function decorator
 - mark test function
 - `args` arguments
 
 <p style="color:#25b4c0;">@AsyncTest(...args)</p>
+
 - function decorator
 - mark asynchronous test function
 - need to use `async/await`
 - `args` arguments
 
 <p style="color:#25b4c0;">@Ignore()</p>
+
 - function decorator
 - ignore (async) test function
 
 ## Assert
 
 <p style="color:#25b4c0;">Assert.run(class, ...args)</p>
+
 - run class by yourself
 - need tu use `autoRun:false` in @TestClass()
 - `class` test class
 - &nbsp;`args` test class constructor arguments
 
 <p style="color:#25b4c0;">Assert.setLang(obj)</p>
+
 - set language, default is english
 - `obj` language key/map, see more at source code
   + build-in language:
@@ -140,6 +146,7 @@ open console to view test info
   + `Assert.lang_zh_cn` chinese
 
 <p style="color:#25b4c0;">Assert.equal(expected:any, actual:any, desc: string = "")</p>
+
 - assert if is equal, compare each param if is `object`
 - `expected` expected value
 - &nbsp;&nbsp;`actual` actual value
@@ -172,7 +179,7 @@ orther assert
 assert usage
 
 function|approximate expression|useage
-:-|:-|:-|:-
+:-|:-|:-
 equal   | a==b(iterate over object) |Assert.equal(1,1) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=> success<br/>Assert.equal(true,true) => success<br/>Assert.equal(1,'1') &nbsp;&nbsp;&nbsp;&nbsp;=> success<br/>Assert.equal({},{}) &nbsp;&nbsp;&nbsp;&nbsp;=> success<br/>Assert.equal([1],[1]) &nbsp;&nbsp;=> success
 notEqual       |a!=b(iterate over object)
 strongEqual    | typeof(a)==typeof(b) && equal(a,b) |Assert.strongEqual(1,'1') => failed
